@@ -29,7 +29,7 @@ public class Enum {
         Status s = Status.Pending;
 
         switch(s){ //Not need to mention type in switch as it knows it is of type
-                    //Status but in if-else you ned to write if(s==Status.pending)
+                    //Status but in if-else you need to write if(s==Status.pending)
             case Running:
                 System.out.println("All good");
                 break;

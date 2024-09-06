@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class MapPractice {
     public static void main(String[] args) {
@@ -15,6 +16,11 @@ public class MapPractice {
         mp.replace(102,"Sky2");
         System.out.println(mp);
         System.out.println(mp.size());
+        System.out.println("-----------");
+        Set<Integer> keys = mp.keySet();
+        for(int i : keys){
+            System.out.println(i+ ":"+mp.get(i));
+        }
 
     }
 }
