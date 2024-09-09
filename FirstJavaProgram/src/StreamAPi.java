@@ -14,6 +14,7 @@ public class StreamAPi {
         Stream<Integer> s2 = nums.stream().filter(n->n%2==0);
         s2.forEach(n-> System.out.println(n));
         Stream<Integer> s3 = nums.stream().map(n->n*2);
+        System.out.println("=====================");
         int result = nums.stream().reduce(0,(c,e)->c+e);
         s3.forEach(n-> System.out.println(n));
         System.out.println(result);

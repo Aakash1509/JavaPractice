@@ -1,3 +1,5 @@
+package Collection;
+
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.*;
@@ -35,6 +37,7 @@ public class ConcurrentHashMapPractice extends Thread{
         Iterator itr = s1.iterator();
         while(itr.hasNext()){
             Integer I1 = (Integer)itr.next();
+            m.put(104,"D");
             System.out.println("Main thread iterating Map and current entry is:"+I1+"..."+m.get(I1));
             Thread.sleep(3000);
         }

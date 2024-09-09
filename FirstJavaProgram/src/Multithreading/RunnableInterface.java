@@ -5,8 +5,8 @@ public class RunnableInterface implements Runnable{
         System.out.println("Thread task");
     }
     public static void main(String[] args) {
-        RunnableInterface r = new RunnableInterface();
-        Thread t = new Thread(r);
+//        RunnableInterface r = new RunnableInterface(); //Both are same
+        Thread t = new Thread(new RunnableInterface());
         t.start();
     }
 }
