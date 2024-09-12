@@ -1,3 +1,5 @@
+package Multithreading;
+
 public class Join extends Thread {
     static Thread mainthread;
     public void run(){ //can't use throws here

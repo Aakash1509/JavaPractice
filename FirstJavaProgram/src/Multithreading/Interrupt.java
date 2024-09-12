@@ -1,3 +1,5 @@
+package Multithreading;
+
 public class Interrupt extends Thread {
     public void run(){ //can't use throws here
         try {

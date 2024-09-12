@@ -16,7 +16,10 @@ public class StreamAPi {
         Stream<Integer> s3 = nums.stream().map(n->n*2);
         System.out.println("=====================");
         int result = nums.stream().reduce(0,(c,e)->c+e);
+        
         s3.forEach(n-> System.out.println(n));
         System.out.println(result);
+        int result1 = nums.stream().filter(n->n%2==0).map(n->n*2).reduce(0,(c,e)->c+e);
+        System.out.println("Result of grouped statements : "+result1);
     }
 }

@@ -15,6 +15,7 @@ class ObjectLevelLockExample {
 public class ObjectLevelLock {
     public static void main(String[] args) {
         ObjectLevelLockExample obj1 = new ObjectLevelLockExample();
+
         ObjectLevelLockExample obj2 = new ObjectLevelLockExample();
 
         // Thread t1 will lock obj1, and t2 will lock obj2
